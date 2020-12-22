@@ -1,5 +1,11 @@
 package main
 
-func partition(A[] float64, p int, r int)int {
-	return i;
+import "fmt"
+
+// func partition(A[] float64, p int, r int)int {
+	
+// }
+
+func main()  {
+	fmt.Println("hello world!")
 }
