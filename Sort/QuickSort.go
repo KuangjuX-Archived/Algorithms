@@ -42,7 +42,9 @@ func QuickSort(a []int, p int, r int){
 }
 
 func main()  {
-	a := []int{3, 1, 2, 5, 6, 43, 4}
+	// a := []int{3, 1, 2, 5, 6, 43, 4}
+	a := []int{6, 8, 10, 36, 1, 9}
+	// a := []int{6, 8, 10, 36, 1, 6}
 	QuickSort(a, 0, len(a)-1)
 	fmt.Println(a)
 }
