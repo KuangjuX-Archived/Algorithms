@@ -6,11 +6,17 @@ func partition(a []int, p int, r int)int {
 	i, j := p, r+1
 	x := a[p]
 	i = i + 1
-	j = j + 1
+	j = j - 1
 	for true {
-		for a[i] < x {i++}
+		if i >= j {
+			break
+		}
+		for a[i] < x {i = i + 1}
 
-		for a[j] > x {j++}
+		for a[j] > x {
+			j = j - 1
+			
+		}
 
 		if i >= j {
 			break
